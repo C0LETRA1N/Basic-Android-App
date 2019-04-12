@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/helloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Hello Christopher!"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/androidTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helloTextView"
+        android:layout_centerHorizontal="false"
+        android:background="@android:color/holo_green_dark"
+        android:text="I Love Android!"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <ImageView
+        android:id="@+id/carImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/androidTextView"
+        app:srcCompat="@drawable/car1" />
+
+    <EditText
+        android:id="@+id/userEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carImageView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userEditText"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="clickButton"
+        android:text="Click Me" />
+
+</android.widget.RelativeLayout>
